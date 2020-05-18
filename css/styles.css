@@ -1,0 +1,399 @@
+/* --  R E S E T  -- */
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+img,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+a,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+    /* Cancel out some differences between browser defaults */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Exo', sans-serif;
+    vertical-align: baseline;
+    font-size: 1rem;
+}
+
+body {
+    width: 85%;
+}
+
+header {
+    width: 100%;
+    background-color: #f89926;
+    height: 4.5rem;
+}
+
+
+/* --  T Y P O G R A P H Y -- */
+h1 {
+    font-size: 2rem;
+    padding-top: 0.2em;
+    padding-left: 0.1em;
+}
+
+h2 {
+    font-size: 1.5rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.1em;
+}
+
+h3 {
+    font-size: 1.2rem;
+    padding-top: 0.4em;
+    padding-bottom: 0.2em;
+    padding-left: 0.1em;
+}
+
+.thname,
+.thvotes {
+    font-size: 1.5rem;
+}
+
+.tdname,
+.tdvotes {
+    font-size: 1.2rem;
+}
+
+/* --  I M A G E S  -- */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo {
+    height: 4rem;
+}
+
+
+
+/* --  A L L  T A B L E S  -- */
+
+table {
+    border: 2px solid #f89926;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+th,
+td {
+    padding: 0.1em;
+}
+
+th {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: #f89926;
+}
+
+td {
+    background-color: #f9f9f9;
+    font-size: 0.9rem;
+    min-width: 5rem;
+    cursor: pointer;
+    max-height: 1rem;
+
+}
+
+th.active {
+    color: #fff;
+}
+
+th.active .arrow {
+    opacity: 1;
+}
+
+.arrow {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 0;
+    opacity: 0.66;
+}
+
+.arrow.asc {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid #fff;
+}
+
+.arrow.dsc {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #fff;
+}
+
+.popuptext {
+    visibility: hidden;
+    width: 10rem;
+    background-color: darkgray;
+    color: #f89926;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    opacity: 1;
+
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: 0.2rem;
+}
+
+/* --  M A I N  T A B L E  -- */
+#summary-table {
+    width: 49%;
+    height: 15rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#summary-table > thead th {
+    text-align: center;
+    background-color: #f89926;
+    color: rgba(255, 255, 255, 0.66);
+    cursor: pointer;
+    user-select: none;
+    top: 0;
+    border: 2px white;
+}
+
+.tdname {
+    position: relative;
+}
+
+.popupname {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 0.8s ease;
+    background-color: #f9f9f9;
+    font-style: oblique;
+}
+
+.tdname:hover .popupname {
+    width: 100%;
+}
+
+.popupvotes {
+    display: none;
+}
+
+/* --  D E T A I L  T A B L E  -- */
+#detail,
+#special-detail,
+#advanced-detail {
+    width: 100%;
+    margin-bottom: 1.4rem;
+}
+
+#candidate-detail > thead th {
+    text-align: center;
+    background-color: #f89926;
+    color: rgba(255, 255, 255, 0.66);
+    cursor: pointer;
+    user-select: none;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    border: 2px white;
+}
+
+.popupparty {
+    visibility: hidden;
+    width: 10rem;
+    background-color: #f89926;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    opacity: 1;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: 0.2rem;
+}
+
+.thferguson:hover .popupparty,
+.thgrattan:hover .popupparty,
+.thguy:hover .popupparty,
+.thjennings:hover .popupparty,
+.thmcCann:hover .popupparty,
+.thtukapua:hover .popupparty,
+.thrudzki:hover .popupparty {
+    visibility: visible;
+}
+
+.thsuburb,
+.thlocation,
+.thferguson,
+.thgrattan,
+.thguy,
+.thjennings,
+.thmcCann,
+.thtukapua,
+.thtotal,
+.thinformal,
+.thrudzki {
+    width: 4em;
+    position: relative;
+    display: inline-block;
+}
+
+/* --  P A R T Y  C O L O U R S  -- */
+.Green {
+    color: #098137;
+}
+
+.ACT {
+    color: #FDE401;
+}
+
+.National {
+    color: #00529F;
+}
+
+.Labour {
+    color: #D82A20;
+}
+
+.New {
+    color: #000000;
+}
+
+.The {
+    color: #01B096;
+}
+
+.Independent {
+    color: rgba(0, 0, 0, 0.4)
+}
+
+
+/* -- T A B L E  W I D T H -- */
+.thsuburb {
+    width: 5rem;
+}
+
+.thlocation {
+    width: 16rem;
+}
+
+.thferguson {
+    width: 5.5rem;
+}
+
+.thgrattan {
+    width: 4.5rem;
+}
+
+.thguy {
+    width: 2.8rem;
+}
+
+.thjennings {
+    width: 5.3rem;
+}
+
+.thmcCann {
+    width: 4.8rem;
+}
+
+.thrudzki {
+    width: 4.2rem;
+}
+
+.thtukapua {
+    width: 5rem;
+}
+
+.thtotal {
+    width: 3.2rem;
+}
+
+.thinformal {
+    width: 4.9rem;
+}
+
+
+
+/* -- D E V  & &  F O O T E R  -- */
+.page-footer {
+    background-color: #f89926;
+    width: 84.9%;
+    height: 1.5rem;
+}
+
+.footer-copyright {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.live {
+    color: greenyellow;
+    font-style: oblique;
+}
+
+.dev {
+    color: red;
+    font-style: oblique;
+}
+
+
+#app,
+#chart {
+    max-width: 49%;
+    height: 12rem;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}

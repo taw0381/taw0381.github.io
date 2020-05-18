@@ -1,0 +1,287 @@
+/* RESET */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    /* Cancel out some differences between browser defaults */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Exo', sans-serif;
+    vertical-align: baseline;
+}
+th {
+    width: 50%;
+}
+body {
+    width: 85%;
+    overflow-y: scroll;
+}
+h1 {
+    font-size: 2rem;
+    padding-bottom: 0.8rem;
+}
+h2{
+    font-size: 1.5rem;
+    padding-bottom: 0.2rem;
+}
+header {
+    max-width: 100%;
+    background-color: #f89926;
+    height: 5.2rem
+}
+nav {
+    padding-top: 0.8em;
+    width: 78%;
+    background-color: #f89926;
+    padding-bottom: 0.5em;
+}
+.dev {
+    color: red;
+    font-style: oblique;
+}
+.live {
+    color: greenyellow;
+    font-style: oblique;
+}W
+#MainTable {
+    width: 50%;
+}
+#CandidateMain {
+    margin-bottom: 2em;
+}
+#logo {
+    display: block;
+    height: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+#demo {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+}
+#CandidateMain {
+    width: 45%;
+    display: inline-block;
+}
+#vuechart {
+    width: 45%;
+    display: inline-block;
+}
+#search {
+    padding-bottom: 1em;
+    padding-top: 2em;
+}
+
+.hidden {
+    display: none;
+}
+/*Edit Below please !!!!*/
+
+body {
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-size: 14px;
+  color: #444;
+}
+
+table {
+  border: 2px solid #f89926;
+  border-radius: 3px;
+  background-color: #fff;
+}
+th, td {
+    padding: 0.2em;
+}
+th {
+  text-align: center;
+  background-color: #f89926;
+  color: rgba(255, 255, 255, 0.66);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border: 2px white;
+}
+
+td {
+  background-color: #f9f9f9;
+  font-size: 0.9rem;
+  min-width: 1em;
+
+}
+
+th.active {
+  color: #fff;
+}
+
+th.active .arrow {
+  opacity: 1;
+}
+
+.arrow {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 0;
+  opacity: 0.66;
+}
+
+.arrow.asc {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid #fff;
+}
+
+.arrow.dsc {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #fff;
+}
+
+
+th > div {
+    font-size: 1rem;
+}
+
+/* Tooltips */
+.tooltiptext {
+  visibility: hidden;
+  width: 10rem;
+  background-color: #f89926;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  opacity: 1;
+  
+  /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: 0.2rem;
+}
+
+.thferguson:hover .tooltiptext, .thgrattan:hover .tooltiptext, .thguy:hover .tooltiptext, .thjennings:hover .tooltiptext, .thmcCann:hover .tooltiptext, .thtukapua:hover .tooltiptext, .thtotal:hover .tooltiptext, .thinformal:hover .tooltiptext, .thrudzki:hover .tooltiptext {
+   visibility: visible;
+}
+/* Table grid CSS - Candidate Full */
+/* Table Headers */
+
+.thsuburb, .thlocation, .thferguson, .thgrattan, .thguy, .thjennings, .thmcCann, .thtukapua, .thtotal, .thinformal, .thrudzki {
+    width: 4em;
+    position: relative;
+    display: inline-block;
+}
+/* Table data */
+.tdferguson, .tdgrattan, .tdguy, .tdjennings, .tdmcCann, .tdtukapua, .tdtotal, .tdinformal, .tdrudzki, .thsuburb {
+    text-align: center;
+    min-width: 1em;
+}
+/* Table Headings Grid 1 */
+
+.thsuburb {
+    width: 5em;
+}
+.thlocation {
+    width: 16em;
+    padding-right: 2rem;
+}
+.thferguson {
+    width: 5.5rem;
+} 
+.thgrattan{
+    width: 4.5rem;
+}
+.thguy{
+    width: 2.8rem;
+}
+.thjennings{
+    width: 5.3rem;
+}
+.thmcCann{
+    width: 4.8rem;
+}
+.thrudzki{
+    width: 4.2rem;
+}
+.thtukapua{
+    width: 5rem;
+}
+.thtotal{
+    width: 3.2rem;
+}
+.thinformal{
+    width: 4.9rem;
+}
+.thname {
+    width: 7rem;
+}
+.thparty {
+    width: 7rem;
+}
+.thvotes {
+    width: 4rem;
+}
+.tdvotes {
+    text-align: center;
+}
+.page-footer {
+    background-color: #f89926;
+    width: 85%;
+    height: 2.5rem;
+}
+.thname, .thparty {
+    width: auto;
+}
+#CandidateDetail {
+    margin-bottom: 2.5rem;
+    width: 100%;
+}
+
+/*  MEDIA QUERIES  */
+@media screen and (max-width: 78rem){ 
+    body, .page-footer {
+        width: 90%;
+        margin-left: 12px;
+        margin-right: 2px;
+    }
+}
+@media screen and (max-width: 70rem) {
+    body, .page-footer {
+        width: 95%;
+    }
+    .thlocation {
+    min-width: auto;
+    }
+}
+@media screen and (max-width: 61rem) {
+    body, .page-footer {
+        width: 100%;
+    }
+    th > div {
+    font-size: 0.8rem;
+    }
+    td {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 56rem) {
+    body, .page-footer {
+        width: 100%;
+    }
+    th > div {
+    font-size: 0.7rem;
+    }
+    td {
+        font-size: 0.7rem;
+    }
+
+}
+.hijab {
+    background-color:aqua; 
+}
